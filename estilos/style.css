@@ -20,28 +20,79 @@
   body{
     font-family: "League Spartan", serif;
     font-weight: 200;
+    margin: auto;
   }
   h1{
     font-family: "Lalezar";
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 100;
+  }
+  h2{
+    font-size: 45px;
+  }
+  h3{
+    font-size: 30px;
+    margin: 5px;
+  }
+  h1, h2{
+    text-align: center;
+  }
+  p{
+    font-size: 24px;
   }
   section#intro{
     display: flex;
     flex-direction: row;
   }
+  section#historia{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+  }
+  section#historia > div{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+  }
+  article{
+    background-color: white;
+    width: 774px;
+    height: 753px;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 400;
+    color: black;
+    border-radius: 0 15px 15px 0;
+    justify-items: end;
+  }
+  article > p{
+    width: 500px;
+    margin: 23px;
+    font-size: 28px;
+  }
   aside{
     display: flex;
     justify-content: space-around;
   }
+  #aside_explicativo{
+    background-color: white;
+  }
+  #aside_explicativo > div{
+    width: 420px;
+  }
   #aside_topicos{
+    display: flex;
+    margin: 0px 120px 20px 120px;
     flex-direction: column;
+    justify-content: space-around;
   }
   #aside_topicos > div{
     color: white;
     background-color: var(--color_gray);
     width: 589px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 9px;
     margin: 5px;
   }
