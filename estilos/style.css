@@ -16,15 +16,18 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
-
   body{
+    background-image: url(../imagens/download\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     font-family: "League Spartan", serif;
     font-weight: 200;
     margin: auto;
   }
   h1{
-    font-family: "Lalezar";
-    font-size: 90px;
+    font-family: "League Spartan", serif;
+    margin: 0px;
+    font-size: 80px;
     font-weight: 100;
   }
   h2{
@@ -40,13 +43,73 @@
   p{
     font-size: 24px;
   }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+  }
+  header img{
+    width: 41px;
+    height: 46px;
+  }
+  header a{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+  }
+  header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav#nav_login a#login{
+    border: 4px solid;
+    border-radius: 8px;
+    padding: 5px;
+    border-color: var(--color_green);
+
+  }
+  header a:hover{
+    text-decoration: underline;
+  }
   section#intro{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 460px;
+    justify-content: space-around;
+  }
+  section#intro img{
+    width: 400px;
+    height: 370px;
+  }
+  section#intro h3{
+    color: var(--color_green);
+  }
+  button{
+    font-family: "League Spartan", serif;
+    background-color: var(--color_green);
+    color: white;
+    width: 110px;
+    height: 30px;
+    border-radius: 8px;
+    border: 0px;
+  }
+  button:hover{
+    cursor: pointer;
   }
   section#historia{
     display: flex;
-    width: 100%;
     justify-content: space-between;
     background-color: black;
     color: white;
@@ -59,6 +122,12 @@
   }
   section#marca{
     display: flex;
+    background-color: white;
+  }
+  section#marca img{
+    margin: 30px;
+    width: 180px;
+    height: 200px;
   }
   section#marca h2{
     text-align: left;
@@ -68,18 +137,20 @@
     background-color: black;
     color: white;
   }
+  section#devs div#imgs{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
   section#devs  img{
     width: 224px;
     height: 278px;
-    margin: auto;
-    align-items: center;
-    background-color: wheat;
     border-radius: 9px;
   }
   article{
     background-color: white;
-    width: 774px;
-    height: 753px;
+    width: 100%;
+    height: 80%;
     padding: 10px;
     font-size: 28px;
     font-weight: 400;
@@ -100,7 +171,7 @@
     background-color: white;
   }
   #aside_explicativo > div{
-    width: 420px;
+    width: 410px;
   }
   #aside_topicos{
     display: flex;
@@ -111,7 +182,7 @@
   #aside_topicos > div{
     color: white;
     background-color: var(--color_gray);
-    width: 589px;
+    width: 579px;
     padding: 15px;
     border-radius: 9px;
     margin: 5px;
