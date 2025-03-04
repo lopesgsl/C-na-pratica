@@ -46,6 +46,7 @@
   }
   section#historia{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     background-color: black;
     color: white;
@@ -95,4 +96,9 @@
     padding: 15px;
     border-radius: 9px;
     margin: 5px;
+  }
+  div#faixa_verde{
+    background-color: var(--color_green);
+    width: 100%;
+    height: 15px;
   }
