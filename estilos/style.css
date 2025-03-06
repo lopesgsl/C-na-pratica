@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Lalezar&family=League+Spartan:wght@100..900&display=swap');
 
 :root{
     --color_gray: #2C2C2C;
@@ -16,6 +16,36 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
+  .kulim-park-extralight {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kulim-park-light {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kulim-park-regular {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kulim-park-semibold {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kulim-park-bold {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
   body{
     background-image: url(../imagens/download\ 1.png);
     background-repeat: no-repeat;
@@ -25,10 +55,14 @@
     margin: auto;
   }
   h1{
-    font-family: "League Spartan", serif;
+    font-family: "Lalezar", serif;
     margin: 0px;
     font-size: 80px;
     font-weight: 100;
+  }
+  strong{
+    font-family: "Kulim Park", sans-serif;
+    font-size: 150px;
   }
   h2{
     font-size: 45px;
@@ -90,8 +124,8 @@
     justify-content: space-around;
   }
   section#intro img{
-    width: 400px;
-    height: 370px;
+    width: 369px;
+    height:400px;
   }
   section#intro h3{
     color: var(--color_green);
