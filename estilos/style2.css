@@ -135,6 +135,7 @@
     align-items: center;
     height: 130px;
     justify-content: left;
+    padding: 15px 520px;
   }
   section#intro h2{
     color: white;
@@ -142,12 +143,11 @@
   section#intro img{
     height: 50px;
     display: flex;
-    padding-left:500px ;
   }
+
   #aside_explicativo article{
     display: flex;
     flex-direction: column;
-    padding: 20px 0px;
     background-color: rgb(255, 255, 255);
     color: black;
     padding: 30px 500px;
@@ -157,9 +157,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 130px;
+    height: 120px;
     justify-content: center;
     padding: 30px 0px;
+  }
+  section#tutorial_title img{
+    padding: 10px;
   }
   #aside_tutorial{
     background-color: #f2f2f2;
