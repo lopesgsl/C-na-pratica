@@ -80,6 +80,13 @@
   a{
     color: white;
     text-decoration: none;
+    font-size: 24px;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  a img{
+    margin: 5px;
   }
   header{
     display: flex;
@@ -176,10 +183,22 @@
     justify-content: space-around;
     margin: auto;
   }
+  section#devs  a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  section#devs  a:hover{
+    text-decoration: none;
+  }
   section#devs  img{
     width: 224px;
     height: 278px;
     border-radius: 9px;
+  }
+  section#devs  .icon{
+    width: 25px;
+    height: 25px;
   }
   article{
     background-color: white;

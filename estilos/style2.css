@@ -109,6 +109,10 @@
     justify-content: space-between;
     align-items: center;
   }
+  header nav a#home{
+    margin: 0px;
+    height: 46px;
+  }
   header nav#nav_login a#login{
     border: 4px solid;
     border-radius: 8px;
@@ -195,4 +199,7 @@
     justify-content: space-around;
     background-color: var(--color_gray);
     color: white;
+  }
+  footer a{
+    font-size: 24px;
   }
