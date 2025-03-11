@@ -234,6 +234,12 @@
   }
   #aside_explicativo{
     background-color: white;
+    align-items: center;
+  }
+  #aside_explicativo button{
+    background-color: white;
+    align-items: center;
+    display: none;
   }
   #aside_explicativo > div{
     width: 410px;

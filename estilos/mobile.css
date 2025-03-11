@@ -72,11 +72,22 @@
         display: none;
     }
     section#intro{
-        flex-direction: column;
         background-position: top;
         align-items: center;
     }
     section#intro img{
+        width: 20%;
+    }
+    aside#aside_explicativo{
+        margin: auto;
+        text-align: justify;
+    }
+    #aside_explicativo button{
+        background-color: white;
+        align-items: center;
+        display: block;
+      }
+    div#div_2 ,div#div_3{
         display: none;
     }
     section div#div_historia{
