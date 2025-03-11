@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Lalezar&family=League+Spartan:wght@100..900&display=swap');
+
+:root{
+    --color_gray: #2C2C2C;
+    --color_green: #00FF66;
+}
+
+.lalezar-regular {
+    font-family: "Lalezar", serif;
+    font-style: normal;
+  }
+  
+.league-spartan{
+    font-family: "League Spartan", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  .kulim-park-extralight {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kulim-park-light {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kulim-park-regular {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kulim-park-semibold {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kulim-park-bold {
+    font-family: "Kulim Park", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @media screen and (max-width: 500px){
+    body{
+        background: none;
+        background-color: white;
+    }
+    h1{
+        width: 100%;
+        font-size: 30px;
+    }
+    strong{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 22.5px;
+      }
+    h3{
+        font-size: 18px;
+        margin: 5px;
+    }
+    p{
+        font-size: 16px;
+    }
+    header{
+        display: none;
+    }
+    section#intro{
+        flex-direction: column;
+        background-position: top;
+        align-items: center;
+    }
+    section#intro img{
+        display: none;
+    }
+    section div#div_historia{
+        display: none;
+    }
+    aside#aside_topicos{
+        width: 100%;
+        margin: auto;
+    }
+    aside#aside_topicos > div{
+        width: 60%;
+        margin: auto;
+        margin: 10px;
+    }
+    section#marca div{
+        margin: 15px;
+        text-align: justify;
+    }
+    section#marca img{
+        display: none;
+    }
+    section#devs div#imgs{
+        flex-direction: column;
+      }
+    section#devs div#imgs a{
+      flex-direction: column;
+      margin: 10px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer > div{
+        margin: 10px;
+    }
+  }

@@ -4,6 +4,7 @@
 :root{
     --color_gray: #2C2C2C;
     --color_green: #00FF66;
+    --color_lite_gray: #F2F2F2;
 }
 
 .lalezar-regular {
@@ -47,16 +48,16 @@
   }
   
   body{
-    background-image: url(../imagens/download\ 1.png);
-    background-repeat: no-repeat;
     background-size: contain;
+    background-position: end;
     font-family: "League Spartan", serif;
     font-weight: 200;
-    margin: auto;
+    margin: 0px;
   }
   h1{
     font-family: "Lalezar", serif;
     margin: 0px;
+    width: 80%;
     font-size: 80px;
     font-weight: 100;
   }
@@ -89,11 +90,12 @@
     margin: 5px;
   }
   header{
+    background-color: var(--color_lite_gray);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    padding: 10px;
   }
   header img{
     width: 41px;
@@ -124,15 +126,22 @@
     text-decoration: underline;
   }
   section#intro{
+    background-image: url(../imagens/download\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 460px;
     justify-content: space-around;
+    padding: 20px;
+  }
+  section#intro div{
+    width: 70%;
   }
   section#intro img{
-    width: 369px;
-    height:400px;
+    background: none;
+    width: 20%;
   }
   section#intro h3{
     color: var(--color_green);
@@ -151,6 +160,7 @@
   }
   section#historia{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     background-color: black;
     color: white;
@@ -163,12 +173,14 @@
   }
   section#marca{
     display: flex;
+    width: 100%;
     background-color: white;
   }
   section#marca img{
-    margin: 30px;
-    width: 180px;
-    height: 200px;
+    margin: 1%;
+    width: 10%;
+    height: 70%;
+    font-size: 10px;
   }
   section#marca h2{
     text-align: left;
@@ -228,14 +240,15 @@
   }
   #aside_topicos{
     display: flex;
-    margin: 0px 120px 20px 120px;
+    width: 50%;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
   }
   #aside_topicos > div{
     color: white;
     background-color: var(--color_gray);
-    width: 579px;
+    width: 80%;
     padding: 15px;
     border-radius: 9px;
     margin: 5px;
@@ -251,4 +264,7 @@
     justify-content: space-around;
     background-color: var(--color_gray);
     color: white;
+  }
+  footer >div{
+    text-align: center;
   }
