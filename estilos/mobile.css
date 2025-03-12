@@ -75,6 +75,10 @@
         background-position: top;
         align-items: center;
     }
+    section#intro p{
+      stroke: black;
+      color: var(--color_green);
+    }
     section#intro img{
         width: 20%;
     }
