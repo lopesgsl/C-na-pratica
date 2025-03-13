@@ -76,23 +76,22 @@
         align-items: center;
     }
     section#intro p{
-      stroke: black;
+      stroke:1px solid black;
       color: var(--color_green);
+
     }
     section#intro img{
         width: 20%;
     }
     aside#aside_explicativo{
-        margin: auto;
-        text-align: justify;
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      animation: 9s linear 0s infinite alternate aside;
+
     }
-    #aside_explicativo button{
-        background-color: white;
-        align-items: center;
-        display: block;
-      }
-    div#div_2 ,div#div_3{
-        display: none;
+    #aside_explicativo div{
+      width: 70vw;
     }
     section div#div_historia{
         display: none;

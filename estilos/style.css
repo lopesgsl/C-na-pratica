@@ -233,16 +233,10 @@
     justify-content: space-around;
   }
   #aside_explicativo{
+    display: flex;
+    width: 100%;
     background-color: white;
     align-items: center;
-  }
-  #aside_explicativo button{
-    background-color: white;
-    align-items: center;
-    display: none;
-  }
-  #aside_explicativo > div{
-    width: 410px;
   }
   #aside_topicos{
     display: flex;
