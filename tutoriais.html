@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C na Prática</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+    </style>
+    
+    <link rel="stylesheet" href="/estilos/tutoriais.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--todo o menu-->
+    <div class="perfil-caixa">
+        <a href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(60, 60, 60)" class="perfil" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="nonzero" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+            
+        </a>
+    </div>
+    <div>
+        <nav class="menu-sidebar">
+            
+            <div class="itens-sidebar" id="btn-expandir">
+                <a href="#">
+                    <i class="fa-solid fa-bars" id="btn-exp"></i>
+
+                </a>
+            </div>
+            <ul>
+               
+                <li class="itens-sidebar">
+                    <a href="/index.html">
+                        <i class="fas fa-home"></i>
+                        <span class="span-menu">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="itens-sidebar">
+                    <a href="/downloads.html">
+                        <i class="fa-solid fa-download"></i>
+                        <span class="span-menu">Downloads</span>
+                    </a>
+                </li>
+
+                <li class="itens-sidebar"  id="topicos">
+                    <a href="#">
+                        <i class="fas fa-list-alt"></i>
+                        <span class="span-menu">Tópicos</span>
+                    </a>
+                
+                    <ul class="sub">
+                        <li class="sub-topicos" >
+                            <a href="#">
+                                <i class="fas fa-terminal"></i>
+                                <span class="span-menu">Introdução ao <br>C e váriaveis.</span>
+                            </a>
+                        </li>
+                        <li class="sub-topicos" >
+                            <a href="#">
+                                <i class="fas fa-terminal"></i>
+                                <span class="span-menu">Entrada e <br>saída.</span>
+                            </a>
+                        </li>
+                        <li class="sub-topicos">
+                            <a href="#">
+                                <i class="fas fa-terminal"></i>
+                                <span class="span-menu">Condições.</span>
+                            </a>
+                        </li>
+                        <li class="sub-topicos">
+                            <a href="#">
+                                <i class="fas fa-terminal"></i>
+                                <span class="span-menu">Laços de <br>Repetição.</span>
+                            </a>
+                        </li>
+                        <li class="sub-topicos">
+                            <a href="#">
+                                <i class="fas fa-terminal"></i>
+                                <span class="span-menu">Vetores e <br>matrizes.</span>
+                            </a>
+                        </li>
+                    </ul>
+
+            </ul>
+        </nav>
+    </div>
+
+
+<h1>Curso de C</h1>
+<!--para tutoriais com videos
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+        <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+      </svg>
+      
+       para tutoriais com textos
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+        <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+    </svg>
+
+    para praticas
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
+        <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9M3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708z"/>
+        <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
+    </svg>
+      -->
+    <div class="container">
+       
+     <div class="video">
+        <iframe id="videoFrame" width="0" height="0" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; muted; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" muted autoplay allowfullscreen></iframe>
+      </div>
+<section >
+    
+    
+<h2>Introdução ao C e váriaveis</h2>
+
+
+    <ul class="tutoriais">
+        <a  href="#" onclick="trocarVideo('E5g8_FApAiA?si=87NmJsi7xOfRKnCS')">
+            <li>
+
+            <div class="caixas" >
+                <h6>1</h6>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+                  </svg>
+
+                <p>Algoritmos</p>
+            </div>
+            </li>
+        </a>
+        <a  href="#" onclick="trocarVideo('a_VeysH5UZY?si=TWQJ96YF7fVl7BKH')">
+            <li>
+
+            <div class="caixas" >
+                <h6>2</h6>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+                  </svg>
+
+                <p>Lógica</p>
+            </div>
+            </li>
+        </a>
+        <a  href="#" onclick="trocarVideo('9VzUGADaZhg?si=I7MKoMhbt7To7yCt')">
+            <li>
+
+            <div class="caixas" >
+                <h6>3</h6>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+                  </svg>
+
+                <p>Elementos de Algoritmos</p>
+            </div>
+            </li>
+        </a>
+        <a  href="#" onclick="trocarVideo('7cdFSiOdQsg?si=RhpVk0VIWdr1iWg0')">
+            <li>
+
+            <div class="caixas" >
+                <h6>4</h6>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+                  </svg>
+
+                <p>Representação de Algoritmos</p>
+            </div>
+            </li>
+        </a>
+        <a  href="#" onclick="trocarVideo('gtQG1UY5mrk?si=65NE2iUF1tGg_5xq')">
+            <li>
+
+            <div class="caixas" >
+                <h6>5</h6>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+                  </svg>
+
+                <p>Introdução à Programação</p>
+            </div>
+            </li>
+        </a>
+        <a  href="#" onclick="trocarVideo('hEi-xDyIBHg?si=ob00Cp3D0leYtKce')">
+            <li>
+
+            <div class="caixas" >
+                <h6>6</h6>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+                  </svg>
+
+                <p> Componentes de um Compilador</p>
+            </div>
+            </li>
+        </a>
+        <a  href="#" onclick="trocarVideo('UXWpudh5BxU?si=nuQEeijgJl93e4hZ')">
+            <li>
+
+            <div class="caixas" >
+                <h6>7</h6>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
+                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
+                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
+                  </svg>
+
+                <p>Dicas Importantes</p>
+            </div>
+            </li>
+        </a>
+        
+
+</section>
+
+
+
+</div>
+
+
+    
+<script far src="tutoriais.js"></script>    
+
+</body>
+</html>
+</body>
+</html>
