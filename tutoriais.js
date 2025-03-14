@@ -51,4 +51,3 @@ btntutorial.addEventListener('click', function(){
 function trocarVideo(videoId) {
     document.getElementById('videoFrame').src = `https://www.youtube.com/embed/${videoId}`;
 }
-
