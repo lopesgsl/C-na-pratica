@@ -1,0 +1,422 @@
+/* <weight>: Use a value from 100 to 900
+   <uniquifier>: Use a unique and descriptive class name  */
+.league-spartan{
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight:0;
+  font-style: normal;
+}
+
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: "League Spartan", serif;
+    
+}
+body{
+    background-image: url(./img/wallpaper\ site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    padding: 0px 0px 300px 0px;
+    color: #0C0D0C;
+   
+}
+body, html{
+    overflow-x: hidden;
+}
+
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 54px;
+    color: #0C0D0C;
+}
+h2{
+    width: 25vw;
+    margin-top: 0px;
+    color: #0C0D0C;
+}
+
+a{
+    text-decoration: none;
+    color: #0C0D0C;
+}
+/*menu barra lateral*/
+
+#btn-expandir{
+    padding-top: 8px;
+    margin:0px;
+}
+.menu-sidebar{
+    background-color: transparent;
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 60px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: translateZ(0) scale(1,1);
+    transform: translateZ(0) scale(1,1);
+    
+}
+.menu-sidebar > ul{
+    margin: 10px 0px;
+
+}
+.menu-sidebar #topicos ul{
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: all .5s;
+
+}
+.menu-sidebar li{ 
+    position: relative;
+    display: block;
+    width: 250px;   
+}
+
+nav.menu-sidebar  li.ativo > a{
+    color: #fff;
+    background-color: #282828;
+}
+
+nav.menu-sidebar  #topicos ul.abrir{
+    max-height: 500px;
+    transform: translateY(0px);
+    background-color: transparent;
+    color: #282828;
+    opacity: 1;
+    
+}
+
+.menu-sidebar li > a{
+    position: relative;
+    width: 255px;
+    color: #282828;
+    display: table;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transform: translateZ(0) scale(1,1);
+    transform: translateZ(0) scale(1,1);
+    -webkit-transition: all 0.15s linear;
+    transition:all 0.15s linear;
+
+}
+.menu-sidebar .span-menu{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 180px;
+    transform: translateX(+30px);
+    transition: .5s ;
+    opacity: 0;
+}
+.menu-sidebar.expandir .span-menu{
+    transform: translateX(0);
+    opacity: 1;
+}
+/*.lista{
+    background-color:;
+    text-transform: capitalize;
+}*/
+.menu-sidebar li:hover a, nav.menu-sidebar  li.active > a {
+    color: #fff;
+    background-color: #282828;
+    
+}
+
+.menu-sidebar{
+    -webkit-user-select: none;
+    user-select: none;
+    /*box-shadow: 3px 0px 0px #282828*/
+}
+
+.sub-topicos .span-menu{
+    vertical-align: middle;
+    top: 1px;
+    font-weight: 400;
+}
+.sub-topicos .fas{
+    position: relative;
+    top: 12px;
+}
+
+.fa, .fas, .fa-solid{
+    position: relative;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    top: 12px;
+}
+nav.menu-sidebar.expandir{
+    width: 180px;
+    overflow: hidden;
+
+}    
+nav.menu-sidebar  #topicos:hover ul a{
+    background-color: transparent;
+    color: #282828;
+    
+       
+}
+
+nav.menu-sidebar  #topicos li:hover > a {    
+    color: #fff;
+    background-color:#3a3a3a;
+}
+.perfil-caixa{
+    display: flex;
+    justify-content:right;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+.perfil{
+    background-color: transparent;
+    padding:0px;
+    transition: 0.7s;
+    border-radius: 50%;
+}
+.perfil:hover{
+    background-color:#d1d1d1 ;
+    fill: #0e0e0e;
+    fill-rule: nonzero;
+    border-radius: 100%;
+    transform: scale(1.05);
+    z-index:10;
+}
+
+.playlists{
+    flex-wrap: wrap;
+
+    
+}
+.tutoriais{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    
+}
+    
+.caixas{
+    vertical-align: middle;
+    display:flex;
+    flex-direction: column;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+    margin:0px 20px 20px 0px;
+    padding: 10px;
+    justify-content:space-evenly    ;
+    align-items: center;
+    text-align: center;
+    
+    color: #0C0D0C;
+    width: 10rem;
+    height: 10rem;
+
+    background-color:rgb(250, 250, 250);
+    box-shadow: 0px 0px 5px #adadad ;
+    transition: .5s ease;
+}
+.caixas h6{
+    margin: 0px;
+    align-self:baseline;
+    font-size: 20px;
+}
+.caixas svg{
+    margin: 0px 0px 10px 0px;
+    justify-self: center;
+    color:rgb(26, 26, 26);
+
+}
+.caixas p{
+    justify-self: center;
+    align-self: center;
+    margin: 0px;
+    height: auto;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(41, 41, 41);
+}
+
+.caixas:hover {
+    
+    background: #fdfdfd;
+    transform: scale(1.02);
+    
+    box-shadow:-10px 10px 10px rgba(29, 29, 29, 0.623);
+}
+
+/*ajustando todo o layout da pagina*/
+
+.container{
+    width:60vw;
+    height: 100vh;
+    margin:0px 160px 0px 185px;
+    padding: 0px;
+    
+
+}
+
+iframe{
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: .5s ease;
+}
+
+.container.aparecervideo .tutoriais{
+    justify-content:end;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 51vh;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x:hidden;
+    
+}
+.container.aparecervideo{
+    margin:0px 160px 0px 185px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/*somente depois qeu clicar*/
+
+.container.aparecervideo iframe{
+    width: 50vw;
+    height: 55vh;
+    opacity: 1;
+    border: 3px solid #00CC60;
+    padding: 2px;
+    border-radius:5px ;
+    transform: translateX(0px);
+    
+    
+}
+.container.aparecervideo .caixas{
+    align-self: center;
+    justify-content:flex-start;
+    display:grid;
+    background-color: #fdfdfd;
+    width:95%;
+    height: 5vh;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 7fr;
+    justify-content:left;
+    margin: 0px;
+    box-shadow: none;
+    text-align: left;
+    vertical-align: middle;
+    
+    
+}
+.container.aparecervideo .playlists{
+    margin: 0px 12px;
+    
+}
+
+.container.aparecervideo .caixas svg{
+    position: relative;
+    padding: 0px;
+    margin: 0px 0px;
+    height: 25px;
+    width: 25px;
+    align-self: auto;
+    right: 15px;
+
+}
+.container.aparecervideo .caixas h6, p{
+    position: relative;
+    align-self:auto;
+    margin:0px 0px 0px 0px;
+   
+}
+
+.container.aparecervideo .caixas:hover{
+    transform: scale(1.01);
+    background: #282828;
+}
+.container.aparecervideo .caixas:hover *{
+    color: #d1d1d1;
+}
+
+    
+@media  screen and (max-width: 990px){
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin:0px 20vw;
+        padding: 0px;
+        transition: all .5s ease-in;
+        
+    }
+    .container .playlists{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .playlists h2{
+        
+        margin-top: 15px;
+        width: 60vw;
+    }
+    .container .tutoriais{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0px;
+    }
+    .container .caixas{
+        display:grid;
+        vertical-align: middle;
+        height: 5vh;
+        width: 65vw;
+        align-items:left;
+        margin: 0px 12px 12px 0px;
+        
+    }
+    .container .caixas svg{
+        
+        height: 0px;
+        opacity: 0;
+    }
+    .container.aparecervideo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin:0px 20vw;
+        padding: 0px;
+        transition: all .5s ease-in;
+        
+    }
+    .container.aparecervideo iframe{
+        opacity: 1;
+        width: 65vw;
+        height: 70vh;
+        border: 3px solid #00CC60;
+        padding: 2px;
+        border-radius:5px ;
+        transform: translateX(0px);
+        
+        
+    }
+  
+}
