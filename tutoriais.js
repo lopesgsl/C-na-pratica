@@ -13,6 +13,7 @@ itens.forEach((item)=>
 )
 
 
+
 //expandir menu
 
 var btnExt = document.querySelector('#btn-exp')
@@ -23,31 +24,19 @@ btnExt.addEventListener('click', function(){
 
 })
 
-//expandir topicos
-
-var btntopicos = document.querySelector('#topicos')
-var subtopicos = document.querySelector('.sub')
-
-btntopicos.addEventListener('click', function(){
-    subtopicos.classList.toggle('abrir')
-
-})
-
 //o video só aparece se clicar
-var btntutorial = document.querySelector('.tutoriais')
-var abrirvideo = document.querySelector('.container')
+var btntutorials = document.querySelectorAll('.card');
+var abrirvideo = document.querySelector('.playlist-video-container');
 
-
-btntutorial.addEventListener('click', function(){
-    abrirvideo.classList.add('aparecervideo')
-
-
-})
-
-
+btntutorials.forEach(function(card) {
+    card.addEventListener('click', function() {
+        abrirvideo.classList.add('aparecervideo');
+    });
+});
 
 
 //trocar de videos
 function trocarVideo(videoId) {
     document.getElementById('videoFrame').src = `https://www.youtube.com/embed/${videoId}`;
 }
+

@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C na Prática</title>
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="tutoriais.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
     </style>
     
     <link rel="stylesheet" href="tutoriais.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <!--todo o menu-->
@@ -48,313 +51,183 @@
                 </li>
 
                 <li class="itens-sidebar"  id="topicos">
-                    <a href="#">
+                    <a href="tutoriais.html">
                         <i class="fas fa-list-alt"></i>
                         <span class="span-menu">Tópicos</span>
-                    </a>
-                
-                    <ul class="sub">
-                        <li class="sub-topicos" >
-                            <a href="#">
-                                <i class="fas fa-terminal"></i>
-                                <span class="span-menu">Introdução ao <br>C e váriaveis.</span>
-                            </a>
-                        </li>
-                        <li class="sub-topicos" >
-                            <a href="#">
-                                <i class="fas fa-terminal"></i>
-                                <span class="span-menu">Entrada e <br>saída.</span>
-                            </a>
-                        </li>
-                        <li class="sub-topicos">
-                            <a href="#">
-                                <i class="fas fa-terminal"></i>
-                                <span class="span-menu">Condições.</span>
-                            </a>
-                        </li>
-                        <li class="sub-topicos">
-                            <a href="#">
-                                <i class="fas fa-terminal"></i>
-                                <span class="span-menu">Laços de <br>Repetição.</span>
-                            </a>
-                        </li>
-                        <li class="sub-topicos">
-                            <a href="#">
-                                <i class="fas fa-terminal"></i>
-                                <span class="span-menu">Vetores e <br>matrizes.</span>
-                            </a>
-                        </li>
-                    </ul>
-
+                    </a>    
             </ul>
         </nav>
     </div>
 
-
 <h1>Curso de C</h1>
-<!--para tutoriais com videos
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-        <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-      </svg>
-      
-       para tutoriais com textos
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
-        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
-        <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
-    </svg>
-
-    para praticas
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
-        <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9M3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708z"/>
-        <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
-    </svg>
-      -->
-    <div class="container">
-       
-     <div class="video">
-        <iframe id="videoFrame" width="0" height="0" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; muted; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" muted autoplay allowfullscreen></iframe>
-      </div>
-    <div class="lateral">
-<div class="playlists">
-    
-    
-<h2 class="titles">Introdução ao C e váriaveis</h2>
-
-
-    <ul class="tutoriais">
-        <a  href="#" onclick="trocarVideo('E5g8_FApAiA?si=87NmJsi7xOfRKnCS')">
-            <li>
-
-            <div class="caixas" >
-                <h6>1</h6>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                  </svg>
-
-                <p>Algoritmos</p>
-            </div>
-            </li>
-        </a>
-        <a  href="#" onclick="trocarVideo('a_VeysH5UZY?si=TWQJ96YF7fVl7BKH')">
-            <li>
-
-            <div class="caixas" >
-                <h6>2</h6>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                  </svg>
-
-                <p>Lógica</p>
-            </div>
-            </li>
-        </a>
-        <a  href="#" onclick="trocarVideo('9VzUGADaZhg?si=I7MKoMhbt7To7yCt')">
-            <li>
-
-            <div class="caixas" >
-                <h6>3</h6>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                  </svg>
-
-                <p>Elementos de Algoritmos</p>
-            </div>
-            </li>
-        </a>
-        <a  href="#" onclick="trocarVideo('7cdFSiOdQsg?si=RhpVk0VIWdr1iWg0')">
-            <li>
-
-            <div class="caixas" >
-                <h6>4</h6>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                  </svg>
-
-                <p>Representação de Algoritmos</p>
-            </div>
-            </li>
-        </a>
-        <a  href="#" onclick="trocarVideo('gtQG1UY5mrk?si=65NE2iUF1tGg_5xq')">
-            <li>
-
-            <div class="caixas" >
-                <h6>5</h6>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                  </svg>
-
-                <p>Introdução à Programação</p>
-            </div>
-            </li>
-        </a>
-        <a  href="#" onclick="trocarVideo('hEi-xDyIBHg?si=ob00Cp3D0leYtKce')">
-            <li>
-
-            <div class="caixas" >
-                <h6>6</h6>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                  </svg>
-
-                <p> Componentes de um Compilador</p>
-            </div>
-            </li>
-        </a>
-        <a  href="#" onclick="trocarVideo('UXWpudh5BxU?si=nuQEeijgJl93e4hZ')">
-            <li>
-
-            <div class="caixas" >
-                <h6>7</h6>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                    <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                  </svg>
-
-                <p>Dicas Importantes</p>
-            </div>
-            </li>
-        </a>
+<!-- container das cartas-->
+<div class="card-container">
+    <!-- container do video-->
+    <div class="playlist-video-container">
+        <div class="main-video-container">
+            <iframe id="main-video" 
+                width="100%" 
+                height="auto" 
+                src="https://www.youtube.com/embed/E5g8_FApAiA?si=2N12aPIseMmoS-pP?rel=0&autoplay=1&mute=1&modestbranding=1&showinfo=0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" 
         
+                referrerpolicy="strict-origin-when-cross-origin" autoplay allowfullscreen>
+            </iframe>
+            <div class="main-vid-title">**Clique em algum video na direita na playlist à direita.** </div>
+        </div>
+        <div class="video-list-container" id="videosList">Playlist</div>
         
+    </div>
 
+
+    <!--cards-->
+    <div class="card" data-video="E5g8_FApAiA?si=2N12aPIseMmoS-pP" data-playlist="playlist1">
+        <img src="./imagens/Comandos de entrada e saída/1.png" alt="">
+        <div class="card-content">
+            <h3>Introdução ao C</h3>
+            <p>(07)Video-aulas<br>(00)Práticas<br><br></p>
+            <a href="#" class="btn">Começar</a>
+        </div>
+    </div>
+    <div class="card" data-video="AAJviAw91Jk?si=Lm_1Xr7QzYQrVE-F" data-playlist="playlist2">
+        <img src="./imagens/Comandos de entrada e saída/2.png" alt="">
+        <div class="card-content">
+            <h3>Entrada e saída</h3>
+            <p>(07)Video-aulas<br>(00)Práticas<br><br></p>
+            <a href="#" class="btn">Começar</a>
+        </div>
+    </div>
+    <div class="card" data-video="HZBe5g7npQI?si=EKH2E_TXkgK_0ZhY" data-playlist="playlist3">
+        <img src="./imagens/Comandos de entrada e saída/6.png" alt="">
+        <div class="card-content">
+            <h3>Strings</h3>
+            <p>(06)Video-aulas<br>(00)Práticas<br><br></p>
+            <a href="#" class="btn">Começar</a>
+        </div>
+    </div>
+    <div class="card" data-video="a77WBD89W2I?si=9dHvqUhV1k-uT-9L" data-playlist="playlist4">
+        <img src="./imagens/Comandos de entrada e saída/3.png" alt="">
+        <div class="card-content">
+            <h3>Condições</h3>
+            <p>(08)Video-aulas<br>(00)Práticas<br><br></p>
+            <a href="#" class="btn">Começar</a>
+        </div>
+    </div>
+
+    <div class="card" data-video="rcLdxPUXaIk?si=5Z18eW_GjfplsDHH" data-playlist="playlist5">
+        <img src="./imagens/Comandos de entrada e saída/4.png" alt="">
+        <div class="card-content">
+            <h3>Laços de repetição</h3>
+            <p>(14)Video-aulas<br>(00)Práticas<br><br></p>
+            <a href="#" class="btn">Começar</a>
+        </div>
+    </div>
+    <div class="card" data-video="Jwgni6okZWY?si=48n-EesGo8D_fm83" data-playlist="playlist6">
+        <img src="./imagens/Comandos de entrada e saída/5.png" alt="">
+        <div class="card-content">
+            <h3>Vetores e Matrizes</h3>
+            <p>(04)Video-aulas<br>(00)Práticas<br><br></p>
+            <a href="#" class="btn">Começar</a>
+        </div>
+    </div>
+
+    
 </div>
-<div class="playlists" >
-    
-    
-    <h2 class="titles">Introdução ao C e váriaveis</h2>
-    
-    
-        <ul class="tutoriais">
-            <a  href="#" onclick="trocarVideo('E5g8_FApAiA?si=87NmJsi7xOfRKnCS')">
-                <li>
-    
-                <div class="caixas" >
-                    <h6>1</h6>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                        <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                      </svg>
-    
-                    <p>Algoritmos</p>
-                </div>
-                </li>
-            </a>
-            <a  href="#" onclick="trocarVideo('a_VeysH5UZY?si=TWQJ96YF7fVl7BKH')">
-                <li>
-    
-                <div class="caixas" >
-                    <h6>2</h6>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                        <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                      </svg>
-    
-                    <p>Lógica</p>
-                </div>
-                </li>
-            </a>
-            <a  href="#" onclick="trocarVideo('9VzUGADaZhg?si=I7MKoMhbt7To7yCt')">
-                <li>
-    
-                <div class="caixas" >
-                    <h6>3</h6>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                        <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                      </svg>
-    
-                    <p>Elementos de Algoritmos</p>
-                </div>
-                </li>
-            </a>
-            <a  href="#" onclick="trocarVideo('7cdFSiOdQsg?si=RhpVk0VIWdr1iWg0')">
-                <li>
-    
-                <div class="caixas" >
-                    <h6>4</h6>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                        <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                      </svg>
-    
-                    <p>Representação de Algoritmos</p>
-                </div>
-                </li>
-            </a>
-            <a  href="#" onclick="trocarVideo('gtQG1UY5mrk?si=65NE2iUF1tGg_5xq')">
-                <li>
-    
-                <div class="caixas" >
-                    <h6>5</h6>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                        <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                      </svg>
-    
-                    <p>Introdução à Programação</p>
-                </div>
-                </li>
-            </a>
-            <a  href="#" onclick="trocarVideo('hEi-xDyIBHg?si=ob00Cp3D0leYtKce')">
-                <li>
-    
-                <div class="caixas" >
-                    <h6>6</h6>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                        <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                      </svg>
-    
-                    <p> Componentes de um Compilador</p>
-                </div>
-                </li>
-            </a>
-            <a  href="#" onclick="trocarVideo('UXWpudh5BxU?si=nuQEeijgJl93e4hZ')">
-                <li>
-    
-                <div class="caixas" >
-                    <h6>7</h6>
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-video3" viewBox="0 0 16 16">
-                        <path d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2"/>
-                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z"/>
-                      </svg>
-    
-                    <p>Dicas Importantes</p>
-                </div>
-                </li>
-            </a>
+
+
+
+<div class="rodape">
+    <div class="sobre">
+        <h3>Sobre</h3>
+        <ul>
             
-    
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                    <span> Projeto</span>
+                </a>
+            </li>
+            
+        </ul>
     </div>
 
+    <div class="devs">
+        <h3>Desenvolvedores</h3>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                    <span> Lucas Edgar</span>
+                </a>
+            </li>
 
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                    <span> Gustavo Lopes</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                    <span> Francisco Guilherme </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-github"></i>
+                    <span> Gledson Soares</span>
+                </a>
+            </li>
+            
+        </ul>
     </div>
+
+    <div class="colab">
+        <h3>Colaboradores</h3>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="far fa-envelope"></i>
+                    <span> Fábio Gomes</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="far fa-envelope"></i>
+                    <span> Diogo</span>
+                </a>
+            </li>
+
+            
+        </ul>
+    </div>
+    <div class="monitoria">
+        <h3>Monitoria</h3>
+        <ul>
+            
+            <li>
+                <a href="#">
+                    <i class="fab fa-discord"></i>
+                    <span> Sala</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-discord"></i>
+                    <span> Contato</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
 </div>
 
-
-    
-<script far src="tutoriais.js"></script>    
-
-
+    <script src="tutoriais.js"></script>
+    <script  src="Videoplaylist.js"></script>
 </body>
+</html>

@@ -15,14 +15,15 @@ body, ul, li, p {
     
 }
 body{
-    background-image: url(./img/wallpaper\ site.jpg);
+    background-image: url(./imagens/wallpaper\ site.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
-    padding: 0px 0px 300px 0px;
+    background-attachment:scroll;
+    padding: 0px;
     color: #0C0D0C;
-   
+
+
 }
 body, html{
     overflow-x: hidden;
@@ -33,11 +34,6 @@ h1{
     text-align: center;
     font-weight: 700;
     font-size: 54px;
-    color: #0C0D0C;
-}
-h2{
-    width: 25vw;
-    margin-top: 0px;
     color: #0C0D0C;
 }
 
@@ -70,15 +66,7 @@ a{
     margin: 10px 0px;
 
 }
-.menu-sidebar #topicos ul{
-    background-color: transparent;
-    max-height: 0;
-    overflow: hidden;
-    transform: translateY(-10px);
-    opacity: 0;
-    transition: all .5s;
 
-}
 .menu-sidebar li{ 
     position: relative;
     display: block;
@@ -90,14 +78,6 @@ nav.menu-sidebar  li.ativo > a{
     background-color: #282828;
 }
 
-nav.menu-sidebar  #topicos ul.abrir{
-    max-height: 500px;
-    transform: translateY(0px);
-    background-color: transparent;
-    color: #282828;
-    opacity: 1;
-    
-}
 
 .menu-sidebar li > a{
     position: relative;
@@ -116,7 +96,7 @@ nav.menu-sidebar  #topicos ul.abrir{
     position: relative;
     display: table-cell;
     vertical-align: middle;
-    width: 180px;
+    width: 300px;
     transform: translateX(+30px);
     transition: .5s ;
     opacity: 0;
@@ -141,15 +121,6 @@ nav.menu-sidebar  #topicos ul.abrir{
     /*box-shadow: 3px 0px 0px #282828*/
 }
 
-.sub-topicos .span-menu{
-    vertical-align: middle;
-    top: 1px;
-    font-weight: 400;
-}
-.sub-topicos .fas{
-    position: relative;
-    top: 12px;
-}
 
 .fa, .fas, .fa-solid{
     position: relative;
@@ -159,21 +130,11 @@ nav.menu-sidebar  #topicos ul.abrir{
     top: 12px;
 }
 nav.menu-sidebar.expandir{
-    width: 180px;
+    width: 150px;
     overflow: hidden;
 
 }    
-nav.menu-sidebar  #topicos:hover ul a{
-    background-color: transparent;
-    color: #282828;
-    
-       
-}
 
-nav.menu-sidebar  #topicos li:hover > a {    
-    color: #fff;
-    background-color:#3a3a3a;
-}
 .perfil-caixa{
     display: flex;
     justify-content:right;
@@ -196,227 +157,217 @@ nav.menu-sidebar  #topicos li:hover > a {
     z-index:10;
 }
 
-.playlists{
-    flex-wrap: wrap;
+/*corpo do site*/
 
-    
+/*caixas de tópicos*/
+.card-container{
+    margin: 0px 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
 }
-.tutoriais{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-    
-}
-    
-.caixas{
-    vertical-align: middle;
-    display:flex;
-    flex-direction: column;
-    border: 0px;
-    border-radius: 5px;
-    outline: none;
-    margin:0px 20px 20px 0px;
-    padding: 10px;
-    justify-content:space-evenly    ;
-    align-items: center;
-    text-align: center;
-    
-    color: #0C0D0C;
-    width: 10rem;
-    height: 10rem;
-
-    background-color:rgb(250, 250, 250);
-    box-shadow: 0px 0px 5px #adadad ;
-    transition: .5s ease;
-}
-.caixas h6{
-    margin: 0px;
-    align-self:baseline;
-    font-size: 20px;
-}
-.caixas svg{
-    margin: 0px 0px 10px 0px;
-    justify-self: center;
-    color:rgb(26, 26, 26);
-
-}
-.caixas p{
-    justify-self: center;
-    align-self: center;
-    margin: 0px;
+.card{
+    width: 350px;
     height: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin:20px;
+    transition: all ease .5s;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+
+}
+.card img{
     width: 100%;
-    font-size: 20px;
-    font-weight: 500;
-    color:rgb(41, 41, 41);
+    height:auto;
+}
+.card-content{
+    margin: 0px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(20px);
+}
+.card-content h3{
+
+    font-size: 28px;
+    margin: 0px;
+    margin-bottom: 8px;
 }
 
-.caixas:hover {
+.card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.card-content .btn{
+    display: inline-block;
+    padding:8px 16px;
+    background-color: #0C0D0C;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
     
-    background: #fdfdfd;
-    transform: scale(1.02);
-    
-    box-shadow:-10px 10px 10px rgba(29, 29, 29, 0.623);
+    transition: all .4s;
 }
 
-/*ajustando todo o layout da pagina*/
+.card:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.438);
+    cursor: pointer;
 
-.container{
-    width:60vw;
-    height: 100vh;
-    margin:0px 160px 0px 185px;
-    padding: 0px;
     
+}
+.card-content .btn:hover{
+    transform: scale(1.05);
+    background-color: #00b152;
 
 }
-
-iframe{
+.playlist-video-container{
     width: 0px;
     height: 0px;
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: .5s ease;
-}
+    opacity: 0; 
+    -webkit-transition: all 0.15s linear;
+    transition:all 0.15s linear;
 
-.container.aparecervideo .tutoriais{
-    justify-content:end;
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    height: 51vh;
-    border-radius: 5px;
-    overflow-y: auto;
-    overflow-x:hidden;
-    
 }
-.container.aparecervideo{
-    margin:0px 160px 0px 185px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-/*somente depois qeu clicar*/
-
-.container.aparecervideo iframe{
-    width: 50vw;
-    height: 55vh;
-    opacity: 1;
-    border: 3px solid #00CC60;
-    padding: 2px;
-    border-radius:5px ;
-    transform: translateX(0px);
-    
-    
-}
-.container.aparecervideo .caixas{
-    align-self: center;
-    justify-content:flex-start;
-    display:grid;
-    background-color: #fdfdfd;
-    width:95%;
-    height: 5vh;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr 7fr;
-    justify-content:left;
+.playlist-video-container *{
     margin: 0px;
-    box-shadow: none;
-    text-align: left;
-    vertical-align: middle;
+    padding: 0px;
+}
+.praticas{
+    width: 0px;
+    height: 0px;
+    opacity: 0; 
+    -webkit-transition: all 0.15s linear;
+    transition:all 0.15s linear;
+
+}
+
+/*quando o video estiver ativado*/
+.playlist-video-container.aparecervideo{
+    display:grid;
+    grid-template-columns: 7fr 3fr ;
+    padding: 0px 100px;
+    margin-bottom: 20px;
+    width:80vw; 
+    height:auto;
+    opacity: 1;
+    
+}
+.playlist-video-container.aparecervideo iframe{
+    height: auto;
+    width:100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 5px;
     
     
 }
-.container.aparecervideo .playlists{
-    margin: 0px 12px;
+.playlist-video-container.aparecervideo .main-vid-title{
+    display: flex;
+    padding: 12px 0px 10px 7px;
+    cursor: default;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+    font-size: 20px;
+    justify-content: space-between; /* Empurra o link para a direita */
+    align-items: center; /* Alinha verticalmente */
+    
+}
+.playlist-video-container.aparecervideo .video-item.active{
+    background-color: #000000;
+
+}
+.playlist-video-container.aparecervideo .main-vid-title:hover{
+    border-bottom: 2px solid #0e0e0e1c;
+    -webkit-transition: all 0.5s ease;
+    transition:all 0.5s ease;
+}
+
+.playlist-video-container.aparecervideo .video-list-container{
+    overflow-y: auto;
+    margin: 0px 0px 0px 5px;
+    padding: 7px;
+    border-radius: 5px;
+    height: 70%;
+    width: 100%;
+}
+.playlist-video-container.aparecervideo .video-list-container .video-item{
+    background-color: #fff;
+    padding: 13px 12px 12px 12px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #282828;
+    cursor: pointer;
+    font-weight: 500;
+    -webkit-transition: all 0.5s;
+    transition:all 0.3s;
+
+}
+
+.playlist-video-container.aparecervideo .video-list-container .video-item:hover{
+    background-color: #1b1b1b;
+    color: #fff;
+    
+    
+
+}
+.playlist-video-container.aparecervideo .video-list-container .video-item.active-video {
+    background: #282828;
+    color: white;
     
 }
 
-.container.aparecervideo .caixas svg{
-    position: relative;
+
+.btn-download {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 0px;
+    width: 80px;
+    background-color: transparent; /* Azul */
+    border: 2px solid #0c0d0c2d;
+    color: #0e0e0ecc;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #1b1b1b;
+    color: #00ec6e;
+    border: 2px solid transparent;
+}
+
+
+
+
+/*rodapé*/
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0e0e0e;
+    color: #fff;
+    margin-top: 500px;
+    bottom: 0px;
+    height: 281px;
+    padding: 50px 300px 20px 300px;
+    border-top: 1px solid #666;
+}
+.rodape a{
+    color: #fff;
+}
+
+.rodape li{
+    margin-bottom: 15px;
+}
+.rodape hr{
     padding: 0px;
     margin: 0px 0px;
-    height: 25px;
-    width: 25px;
-    align-self: auto;
-    right: 15px;
-
-}
-.container.aparecervideo .caixas h6, p{
-    position: relative;
-    align-self:auto;
-    margin:0px 0px 0px 0px;
-   
-}
-
-.container.aparecervideo .caixas:hover{
-    transform: scale(1.01);
-    background: #282828;
-}
-.container.aparecervideo .caixas:hover *{
-    color: #d1d1d1;
-}
-
     
-@media  screen and (max-width: 990px){
-    .container{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin:0px 20vw;
-        padding: 0px;
-        transition: all .5s ease-in;
-        
-    }
-    .container .playlists{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .container .playlists h2{
-        
-        margin-top: 15px;
-        width: 60vw;
-    }
-    .container .tutoriais{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0px;
-    }
-    .container .caixas{
-        display:grid;
-        vertical-align: middle;
-        height: 5vh;
-        width: 65vw;
-        align-items:left;
-        margin: 0px 12px 12px 0px;
-        
-    }
-    .container .caixas svg{
-        
-        height: 0px;
-        opacity: 0;
-    }
-    .container.aparecervideo{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin:0px 20vw;
-        padding: 0px;
-        transition: all .5s ease-in;
-        
-    }
-    .container.aparecervideo iframe{
-        opacity: 1;
-        width: 65vw;
-        height: 70vh;
-        border: 3px solid #00CC60;
-        padding: 2px;
-        border-radius:5px ;
-        transform: translateX(0px);
-        
-        
-    }
-  
 }
+
