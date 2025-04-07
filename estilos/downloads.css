@@ -193,13 +193,19 @@
     flex-direction: column;
     margin: 20px;
   }
-  footer{
+  .rodape {
     display: flex;
-    padding: 50px;
-    justify-content: space-around;
-    background-color: var(--color_gray);
-    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0e0e0e;
+    color: #fff;
+    margin-top: 500px;
+    bottom: 0px;
+    height: 281px;
+    padding: 50px 300px 20px 300px;
+    border-top: 1px solid #666;
   }
-  footer a{
-    font-size: 24px;
+  footer li{
+    list-style: none;
   }
+
