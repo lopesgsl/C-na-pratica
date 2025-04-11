@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         videoFrame.src = `https://www.youtube.com/embed/${video.videoId}`;
                         videoTitle.textContent = video.title;
                         //colocar o botão 'praticar' no titulo
-                        videoTitle.innerHTML = ` ${video.title}<a href="https://github.com/lukkjkin/C-na-pratica/blob/b3f79b2768d68d31f46f3b3e60d9a4b2b6133cb0/Lista%20de%20Exercicios.pdf" target="_blank" class="btn-download">Práticar</a>`;
+                        videoTitle.innerHTML = ` ${video.title}<a href="Lista de Exercicios.pdf" target="_blank" class="btn-download">Práticar</a>`;
 
                         
 

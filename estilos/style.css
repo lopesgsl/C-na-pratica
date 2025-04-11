@@ -273,3 +273,19 @@
   footer li{
     list-style: none;
   }
+  footer > p, li, ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: "League Spartan", serif;
+  }
+  footer > h2{
+    width: 25vw;
+  }
+  footer > .fa, .fas, .fa-solid{
+    position: relative;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    top: 12px;
+}
