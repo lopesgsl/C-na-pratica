@@ -3,10 +3,23 @@
 
 :root{
     --color_gray: #2C2C2C;
-    --color_green: #00FF66;
+    --color_green: #00CC60;
     --color_lite_gray: #F2F2F2;
 }
 
+body, ul, li, p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: "League Spartan", serif;
+  
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 .lalezar-regular {
     font-family: "Lalezar", serif;
     font-style: normal;
@@ -53,6 +66,8 @@
     font-family: "League Spartan", serif;
     font-weight: 200;
     margin: 0px;
+    width: 100%;
+    height: auto;
   }
   h1{
     font-family: "Lalezar", serif;
@@ -63,7 +78,6 @@
   }
   strong{
     font-family: "Kulim Park", sans-serif;
-    font-size: 150px;
   }
   h2{
     font-size: 45px;
@@ -83,9 +97,8 @@
     text-decoration: none;
     font-size: 24px;
   }
-  a:hover{
-    text-decoration: underline;
-  }
+  
+  
   a img{
     margin: 5px;
   }
@@ -97,17 +110,26 @@
     align-items: center;
     padding: 10px;
   }
-  header img{
-    width: 41px;
-    height: 46px;
+  header .smalllogo{
+    margin:10px 15px;
+    width: 41.13px;
+    height: 46.17px;
   }
+  
   header a{
-    margin: 10px;
+    padding: 14px;
+    margin-right: 50px;
     font-size: 20px;
     font-weight: bold;
     align-items: center;
-    color: black;
+    color: rgb(8, 8, 8);
     text-decoration: none;
+    border-radius: 5px;
+    transition: all .5s;
+  }
+  
+  header .pages a{
+    margin-left: 20px;
   }
   header nav{
     display: flex;
@@ -115,16 +137,26 @@
     justify-content: space-between;
     align-items: center;
   }
+  header nav#nav_login a{
+    margin-right: 40px;
+  }
   header nav#nav_login a#login{
     border: 4px solid;
     border-radius: 8px;
-    padding: 5px;
+    padding: 10px;
     border-color: var(--color_green);
 
   }
   header a:hover{
-    text-decoration: underline;
+    background-color: #2c2c2c28;
   }
+  header nav#nav_login a#login:hover{
+    background-color: var(--color_green);
+
+  }
+  html, body { height: 100%; margin: 0; padding: 0; }
+
+
   section#intro{
     background-image: url(../imagens/download\ 1.png);
     background-repeat: no-repeat;
@@ -135,35 +167,97 @@
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    padding: auto 110px;
   }
-  section#intro div{
-    width: 70%;
+
+
+  section#intro .curso{
+    width: 640px;
+    height: 268.55px;
+
   }
-  section#intro img{
+  section#intro .curso img{
+    width: 100%;
+    height: 166.62px;
+    
+  }
+  section#intro .curso p{
+    font-size: 23.34px;
+    font-weight: 500;
+    width: 347px;
+    height: 48;
+    margin:10px 0px;
+  }
+  section#intro .logoc{
     background: none;
-    width: 20%;
+    width: 300px;
+    margin: 20px 0px 60px 0px ;
+
   }
+  
   section#intro h3{
     color: var(--color_green);
   }
   button{
     font-family: "League Spartan", serif;
     background-color: var(--color_green);
-    color: white;
-    width: 110px;
-    height: 30px;
+    border: 4px solid var(--color_green);
+    color:rgb(8, 8, 8);
+    font-weight: 700;
+    font-size: 19.45px;
+    width: 119.12px;
+    height: 40px;
     border-radius: 8px;
     border: 0px;
+    margin: 20px 0px;
+   
+    transition: all  .5s;
+    
   }
   button:hover{
     cursor: pointer;
+    background-color: var(--color_green);
+    box-shadow: 0px 0px 7px var(--color_green);
   }
+
+  #aside_explicativo{
+    padding: 10px 0px;
+    width: 100%;
+    display: flex;
+    
+    
+    
+  }
+  #aside_explicativo .expli{
+    flex-direction: column;
+    width: auto;
+
+  }
+  #aside_explicativo div p{
+    height: 123.59px;
+    width: 253.03px;
+    font-weight: 400;
+    font-size: 21px;
+  }
+
+  #aside_explicativo div h2{
+    /*height: 123.59px;
+    width: 278.92px;*/
+    font-weight: 700;
+    font-size: 33.4px;
+    text-align: left;
+  }
+  
+
   section#historia{
     display: flex;
     width: 100%;
+    height: auto;
     justify-content: space-between;
     background-color: black;
     color: white;
+    padding: 20px 0px;
+    
   }
   section#historia > div{
     display: flex;
@@ -171,48 +265,10 @@
     background-color: black;
     color: white;
   }
-  section#marca{
-    display: flex;
-    width: 100%;
-    background-color: white;
-  }
-  section#marca img{
-    margin: 1%;
-    width: 10%;
-    height: 70%;
-    font-size: 10px;
-  }
-  section#marca h2{
-    text-align: left;
-  }
-  section#devs{
-    padding: 30px;
-    background-color: black;
-    color: white;
-  }
-  section#devs div#imgs{
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-  }
-  section#devs  a{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  section#devs  a:hover{
-    text-decoration: none;
-  }
-  section#devs  img{
-    width: 224px;
-    height: 278px;
-    border-radius: 9px;
-  }
-  section#devs  .icon{
-    width: 25px;
-    height: 25px;
-  }
-  article{
+
+
+
+  #div_historia article{
     background-color: white;
     width: 100%;
     height: 80%;
@@ -223,12 +279,14 @@
     border-radius: 0 15px 15px 0;
     justify-items: end;
   }
-  article > p{
+  #div_historia article > p{
+    padding-left: 110px;
     width: 500px;
     margin: 23px;
     font-size: 28px;
   }
   aside{
+    padding-right: 110px;
     display: flex;
     justify-content: space-around;
   }
@@ -249,6 +307,7 @@
     color: white;
     background-color: var(--color_gray);
     width: 80%;
+    height: auto;
     padding: 15px;
     border-radius: 9px;
     margin: 5px;
@@ -257,35 +316,103 @@
     background-color: var(--color_green);
     width: 100%;
     height: 15px;
-  }
-  .rodape {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #0e0e0e;
-    color: #fff;
-    margin-top: 500px;
-    bottom: 0px;
-    height: 281px;
-    padding: 50px 300px 20px 300px;
-    border-top: 1px solid #666;
-  }
-  footer li{
-    list-style: none;
-  }
-  footer > p, li, ul{
     margin: 0px;
-    padding: 0px;
-    list-style: none;
-    font-family: "League Spartan", serif;
   }
-  footer > h2{
-    width: 25vw;
+  section#marca{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 33px 0px;
   }
-  footer > .fa, .fas, .fa-solid{
-    position: relative;
-    width: 60px;
-    height: 40px;
-    text-align: center;
-    top: 12px;
+
+  section#marca h2{
+    text-align: left;
+    font-weight: 700;
+    font-size: 33.33px
+  }
+
+  #marca img{
+    width: 200px;
+  }
+  #marca .cnapratica{
+    margin-left: 50px;
+    width: 705px; 
+  }
+  #marca .cnapratica p{
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+
+
+
+  section#devs{
+    padding: 30px 200px;
+    background-color: black;
+    color: white;
+    margin: 0px;
+  }
+  section#devs div#imgs{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+  section#devs  a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  section#devs  a:hover{
+    text-decoration: none;
+  }
+  section#devs img{
+    width: 224px;
+    height: 278px;
+    border-radius: 9px;
+  }
+  
+  
+  /*rodapé*/
+
+div.rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #0e0e0e;
+  color: #fff;
+  margin-top: 500px;
+  bottom: 0px;
+  height: 281px;
+  padding: 50px 300px 20px 300px;
+  border-top: 1px solid #666;
+  margin: 0px;
 }
+div.rodape a{
+  color: #fff;
+  text-decoration: none;
+}
+div.rodape h3{
+  font-size:22px;
+  font-weight: 600;
+  margin: 0px 0px 15px 0px;
+}
+div.rodape i{
+  font-size: 20px;
+}
+div.rodape span{
+  font-size: 20px;
+  font-weight: 400;
+}
+div.rodape li{
+  margin-bottom: 15px;
+  font-size: 10px;
+}
+div.rodape hr{
+  padding: 0px;
+  margin: 0px 0px;
+  
+}
+
+
