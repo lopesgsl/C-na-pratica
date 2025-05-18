@@ -113,3 +113,6 @@ body{
     font-family: "League Spartan", serif;
     font-weight: 200;
   }
+  form p{
+    margin: 10px;
+  }
