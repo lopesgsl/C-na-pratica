@@ -27,92 +27,100 @@ body{
     font-family: "Lalezar", serif;
     font-style: normal;
   }
-  
 .league-spartan{
     font-family: "League Spartan", serif;
     font-optical-sizing: auto;
     font-style: normal;
   }
-  .kulim-park-extralight {
-    font-family: "Kulim Park", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .kulim-park-light {
-    font-family: "Kulim Park", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .kulim-park-regular {
-    font-family: "Kulim Park", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .kulim-park-semibold {
-    font-family: "Kulim Park", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .kulim-park-bold {
-    font-family: "Kulim Park", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  header{
-    background-color: white;
-  }
-  main{
-    width: 100vw;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-  }
-  form h2{
-    color: var(--color_gray);
-  }
-  h2 strong{
-    color: var(--color_green);
-  }
-  form input{
-    margin: 10px;
-  }
-  form input.text{
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid var(--color_gray);
-    padding-left: 10px;
-    font-family: "League Spartan", serif;
-    font-weight: 200;
-  }
-  form input[type="submit"]{
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--color_green);
-    color: white;
-    font-family: "League Spartan", serif;
-    font-weight: 200;
-    cursor: pointer;
-  }
-  form a{
-    color: var(--color_green);
-    text-decoration: none;
-    font-family: "League Spartan", serif;
-    font-weight: 200;
-  }
-  form p{
-    margin: 10px;
-  }
+.kulim-park-extralight {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.kulim-park-light {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+} 
+.kulim-park-regular {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.kulim-park-semibold {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.kulim-park-bold {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+header{
+  background-color: white;
+}
+header a#home{
+  margin: 0px;
+  padding: 0px;
+  background-color: none;
+}
+header a#home:hover{
+  margin: 0px;
+  padding: 0px;
+  background-color: none;
+}
+header .link:hover{
+  transform: scale(1.03);
+}
+main{
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+form h2{
+  color: var(--color_gray);
+}
+h2 strong{
+  color: var(--color_green);
+}
+form input{
+  margin: 10px;
+}
+form input.text{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--color_gray);
+  padding-left: 10px;
+  font-family: "League Spartan", serif;
+  font-weight: 200;
+}
+form input[type="submit"]{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color_green);
+  color: white;
+  font-family: "League Spartan", serif;
+  font-weight: 200;
+  cursor: pointer;
+}
+form a{
+  color: var(--color_green);
+  text-decoration: none;
+  font-family: "League Spartan", serif;
+  font-weight: 200;
+}
+form p{
+  margin: 10px;
+}
