@@ -47,6 +47,7 @@ function cadastro() {
   alert("Usuário cadastrado com sucesso!");
   window.location.href = "index.html";
 
+
   localStorage.setItem("usuario_atual", JSON.stringify(usuario));
   usuario_atual = JSON.parse(localStorage.getItem("usuario_atual"));
   console.log(usuarios);
