@@ -140,6 +140,9 @@ html, body {
   header nav#nav_login a{
     margin-right: 40px;
   }
+  header nav#nav_perfil{
+    display: none;
+  }
   header nav#nav_login a#login{
     border: 4px solid;
     border-radius: 8px;
