@@ -1,0 +1,162 @@
+ /* Estilos do Preview - Mova para seus arquivos CSS */
+        /* Estilos Gerais */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f0f2f5; /* Um cinza claro para o fundo */
+        }
+
+        /* Botão para abrir o modal */
+        #btn-abrir-modal {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 12px; /* ALTERADO: Aumentei de 10px para 14px */
+            background-color: #00dd77; /* Verde vibrante */
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 5px 20px rgba(0, 221, 119, 0.4);
+            transition: transform 0.2s;
+        }
+
+        #btn-abrir-modal:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* --- Estilos do Modal --- */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-conteudo {
+            position: relative;
+            background-color: white;
+            padding: 25px 35px;
+            width: 90%;
+            max-width: 480px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: slideIn 0.4s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Cabeçalho do Modal */
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            color: #111;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 800;
+            color: #00dd77; /* Verde */
+        }
+
+        .fechar-modal {
+            font-size: 30px;
+            font-weight: normal;
+            color: #888;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        /* Corpo do Formulário */
+        #form-feedback {
+            color: #333;
+        }
+        
+        #form-feedback label {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* --- Estilos do Sistema de Estrelas --- */
+        .rating-stars {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .rating-stars input[type="radio"] {
+            display: none;
+        }
+
+        .rating-stars label {
+            font-size: 72px !important; /* Era 144px */
+            color: #e0e0e0; 
+            cursor: pointer;
+            transition: color 0.2s;
+            margin: 0 5px;
+            line-height: 1; 
+        }
+
+        .rating-stars label:hover,
+        .rating-stars label:hover ~ label {
+            color: #00dd77;
+        }
+        
+        .rating-stars input[type="radio"]:checked ~ label {
+            color: #00dd77;
+        }
+        /* --- FIM: Estilos do Sistema de Estrelas --- */
+        
+        /* Textarea */
+        #form-feedback textarea {
+            width: 94.5%;
+            height: 110px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px;
+            font-family: inherit;
+            resize: none;
+            margin-top: 5px;
+        }
+
+        #form-feedback textarea:focus {
+            outline: none;
+            border-color: #00dd77;
+        }
+        
+        /* Botão de Enviar */
+        .btn-enviar {
+            width: 100%;
+            padding: 15px;
+            margin-top: 25px;
+            background-color: #00dd77;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .btn-enviar:hover {
+            background-color: #00c46a;
+        }
