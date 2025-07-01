@@ -15,7 +15,7 @@ body, ul, li, p {
     
 }
 body{
-    background-image: url(./imagens/wallpaper\ site.jpg);
+    background-image: url(../imagens/wallpaper\ site.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -263,6 +263,62 @@ nav.menu-sidebar.expandir{
     
     
 }
+/*barra de progresso para videos assistidos*/
+.progress-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 10px;
+  border:2px solid  #1b1b1b;
+}
+
+/* Marca o vídeo assistido com uma cor diferente e um ícone */
+.video-item.watched {
+  background-color: #d4edda; /* verde claro */
+  border-left: 5px solid #28a745; /* barra verde */
+  position: relative;
+  padding-left: 10px;
+}
+
+.video-item.watched::after {
+  content: "✔️";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #28a745;
+}
+
+/* Destaque para o vídeo ativo */
+.video-item.active-video {
+  background-color: #cce5ff; /* azul claro */
+  border-left: 5px solid #007bff;
+}
+
+
+/* Barra de progresso */
+
+.progress-bar {
+  height: 12px;
+  background-color: #28a745; /* verde */
+  width: 0;
+  transition: width 0.5s ease;
+  border-radius: 5px;
+  
+}
+
+/* Texto do progresso */
+.progress-text, .status-text {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #333;
+}
+
+
+
 .playlist-video-container.aparecervideo .main-vid-title{
     display: flex;
     padding: 12px 0px 10px 7px;
