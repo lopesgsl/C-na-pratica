@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if  (localStorage.getItem("usarios") !== null) {
         usuarios = JSON.parse(localStorage.getItem("usuarios"));
+
     }
 
     if (entraButton && formLogin) {
