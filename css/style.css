@@ -5,6 +5,7 @@
     --color_gray: #2C2C2C;
     --color_green: #00CC60;
     --color_lite_gray: #F2F2F2;
+    --color_red: #ff4747ef;
 }
 
 body, ul, li, p {
@@ -155,7 +156,17 @@ html, body {
   } 
   header nav#nav_login a#login:hover{
     background-color: var(--color_green);
-
+  }
+  header nav#nav_perfil button#logout{
+    width: 40px;
+    align-items: center;
+    background-color: transparent;
+    color: var(--color_red);
+  }
+  header nav#nav_perfil button#logout:hover{
+    background-color: var(--color_red);
+    color: white;
+    box-shadow: none;
   }
   html, body { height: 100%; margin: 0; padding: 0; }
 
@@ -417,5 +428,3 @@ div.rodape hr{
   margin: 0px 0px;
   
 }
-
-
