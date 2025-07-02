@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const formLogin = document.getElementById("formLogin"); // Pega o formulário de login
     const entraButton = document.getElementById("entrar");
 
-    if (localStorage.getItem('usuario_atual') !== null) {
+    if (localStorage.getItem('usuario_atual') !== 'null') {
         alert("Você já está logado.");
         window.location.href = 'index.html';
     }
 
-    if  (localStorage.getItem("usarios") !== null) {
+    if  (localStorage.getItem("usarios") !== 'null') {
         usuarios = JSON.parse(localStorage.getItem("usuarios"));
 
     }
@@ -34,8 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (usuarioEncontrado) {
                 localStorage.setItem("usuario_atual", JSON.stringify(usuarioEncontrado));
                 alert("Login realizado com sucesso!");
+                window.location.href = "index.html";
                 formCadastro.reset();
-                window.location.href = "index.html"; // Redireciona para a página inicial
+        
             } else {
                 alert("Usuário ou senha incorretos.");
             }
