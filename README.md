@@ -13,7 +13,7 @@ CSS3: Para a estilização, design e responsividade.
 
 JavaScript (ES6+): Para toda a lógica, interatividade, manipulação do DOM e gestão de dados no localStorage.
 
-🧑‍💻 Equipa
+👨‍💻 Equipa
 Este projeto foi desenvolvido por:
 
 Gustavo Da Silva
@@ -24,4 +24,3 @@ Francisco Guilherme
 
 📄 Licença
 Este projeto é para fins educacionais e está disponível para visualização e estudo.
- 
