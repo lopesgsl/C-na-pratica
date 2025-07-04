@@ -7,11 +7,11 @@ O objetivo deste projeto é aplicar conceitos fundamentais de JavaScript para cr
 ## 🛠️ Tecnologias Utilizadas
 Este projeto foi construído utilizando as tecnologias fundamentais da web, sem o uso de frameworks, para focar nos conceitos puros.
 
-- HTML5: Para a estruturação do conteúdo.
+- **HTML5**: Para a estruturação do conteúdo.
 
-- CSS3: Para a estilização, design e responsividade.
+- **CSS3**: Para a estilização, design e responsividade.
 
-- JavaScript (ES6+): Para toda a lógica, interatividade, manipulação do DOM e gestão de dados no localStorage.
+- **JavaScript (ES6+)**: Para toda a lógica, interatividade, manipulação do DOM e gestão de dados no localStorage.
 
 ## 👨‍💻 Equipa
 Este projeto foi desenvolvido por:
