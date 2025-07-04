@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="ept-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>C na Prática</title>
 </head>
 <body>
-    
+     <header>
+        <nav class="pages">
+            <img class="smalllogo" src="./img/logo c.svg" alt="foto_c_na_pratica">
+
+            <a href="tutoriais.html" class="requer-login">Tópicos</a>
+            <a href="./downloads.html">Downloads</a>
+            <a href="quiz.html" class="requer-login">Quiz</a>
+        </nav>
+        <nav id="nav_perfil">
+            <a href="perfil.html" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(60, 60, 60)" class="perfil" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="nonzero" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </a>
+            <button id="logout">
+                <span class="material-symbols-outlined">logout</span>
+            </button>
+        </nav>
+        <nav id="nav_login">
+            <a href="login.html">Log in</a>
+            <a href="cadastrar.html" id="login">Cadastre-se</a>
+        </nav>
+    </header>
+     <!--Feedback-->
+    <button id="btn-abrir-modal">Dar Feedback</button>
+    <div class="rodape">
+        <div class="sobre">
+            <h3>Sobre</h3>
+            <ul>
+                <li>
+                    <a href="https://github.com/lopesgsl/C-na-pratica" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span> Projeto</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="devs">
+            <h3>Desenvolvedores</h3>
+            <ul>
+                <li>
+                    <a href="https://github.com/lukkjkin" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span> Lucas Edgar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/lopesgsl" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span> Gustavo Lopes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/GuiFG09" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span> Francisco Guilherme </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Soares771" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span> Gledson Soares</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="colab">
+            <h3>Colaboradores</h3>
+            <ul>
+                <li>
+                    <a href="http://lattes.cnpq.br/5180935741320141" target="_blank">
+                        <i class="far fa-envelope"></i>
+                        <span> Fábio Gomes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://lattes.cnpq.br/2745996619940977" target="_blank">
+                        <i class="far fa-envelope"></i>
+                        <span> Diogo</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="monitoria">
+            <h3>Monitoria</h3>
+            <ul>
+                <li>
+                    <a href="https://discord.gg/RR6NBqr5UU" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        <span> Sala</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-discord"></i>
+                        <span> Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div>
+    <script src="script/auth.js"></script>
+    <script src="script/logout.js"></script>
+    <script src="script/feedback.js"></script>
+    <script src="script/header.js"></script>
 </body>
 </html>

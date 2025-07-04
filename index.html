@@ -20,9 +20,9 @@
         <nav class="pages">
             <img class="smalllogo" src="./img/logo c.svg" alt="foto_c_na_pratica">
 
-            <a href="tutoriais.html">Tópicos</a>
+            <a href="tutoriais.html" class="requer-login">Tópicos</a>
             <a href="./downloads.html">Downloads</a>
-            <a href="#">Sobre</a>
+            <a href="quiz.html" class="requer-login">Quiz</a>
         </nav>
         <nav id="nav_perfil">
             <a href="perfil.html" class="nav-link">
@@ -41,7 +41,6 @@
         </nav>
     </header>
      <!--Feedback-->
-
     <button id="btn-abrir-modal">Dar Feedback</button>
 
     <div id="modal-feedback" class="modal">
@@ -59,7 +58,7 @@
                 <h3>Curso de C gratuíto</h3>-->
                 <img src="./img/curso c.svg" alt="">
                 <p>Bem vindo ao curso onde você aprenderá a programar em c do 0!</p>
-                <a href="tutoriais.html"><button>Começar</button></a>
+                <a href="tutoriais.html" class="requer-login"><button>Começar</button></a>
             </div>
             <img class="logoc"src="./img/logo c.svg" alt="Logo_c_na_pratica">
         </section>
@@ -250,6 +249,7 @@
             </ul>
         </div>
 </div>
+    <script src="script/auth.js"></script>
     <script src="script/logout.js"></script>
     <script src="script/feedback.js"></script>
     <script src="script/header.js"></script>

@@ -12,21 +12,30 @@
     <title>C na pratica</title>
 </head>
 <body>
-
     <header>
-     <nav class="pages">
-            <a class="link" id="home" href="./index.html"><img class="smalllogo" src="./img/logo c.svg" alt="foto_c_na_pratica"></a>
-            
-            <a href="tutoriais.html">Tópicos</a>
+        <nav class="pages">
+            <img class="smalllogo" src="./img/logo c.svg" alt="foto_c_na_pratica">
+
+            <a href="tutoriais.html" class="requer-login">Tópicos</a>
             <a href="./downloads.html">Downloads</a>
-            <a href="#">Sobre</a>
+            <a href="quiz.html" class="requer-login">Quiz</a>
+        </nav>
+        <nav id="nav_perfil">
+            <a href="perfil.html" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(60, 60, 60)" class="perfil" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="nonzero" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </a>
+            <button id="logout">
+                <span class="material-symbols-outlined">logout</span>
+            </button>
         </nav>
         <nav id="nav_login">
             <a href="login.html">Log in</a>
             <a href="cadastrar.html" id="login">Cadastre-se</a>
         </nav>
     </header>
-
     <main>
         <form id="formCadastro" method="post">
             <h2>Cadastre-se no <strong>"C na pratica"</strong></h2>
