@@ -4,6 +4,7 @@
 :root{
     --color_gray: #2C2C2C;
     --color_green: #00FF66;
+    --color_red: #ff4747ef;
 }
 
 .lalezar-regular {
@@ -146,7 +147,19 @@
   }
   header nav#nav_login a#login:hover{
     background-color: var(--color_green);
-
+  }
+    header nav#nav_perfil button#logout{
+    width: 40px;
+    border-radius: 8px;
+    border: none;
+    align-items: center;
+    background-color: transparent;
+    color: var(--color_red);
+  }
+  header nav#nav_perfil button#logout:hover{
+    background-color: var(--color_red);
+    color: white;
+    box-shadow: none;
   }
   section#title{
     display: flex;
