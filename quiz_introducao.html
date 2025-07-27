@@ -19,6 +19,7 @@
             <img class="smalllogo" src="./img/logo c.svg" alt="foto_c_na_pratica">
 
             <a href="tutoriais.html" class="requer-login">Tópicos</a>
+            <link rel="stylesheet" href="css/quiz_introducao.css">
             <a href="./downloads.html">Downloads</a>
             <a href="quiz.html" class="requer-login">Quiz</a>
         </nav>
@@ -41,26 +42,15 @@
 
     <main>
 
-   <div class="lista-links">
-  <a href="quiz_introducao.html" class="btn-link">
-    <img src="img/logo site em C 1.png" alt="Ícone C"> Introdução ao C
-  </a>
-  <a href="entrada_saida.html" class="btn-link">
-    <img src="img/logo site em C 1.png" alt="Ícone C"> Entrada e Saída
-  </a>
-  <a href="strings.html" class="btn-link">
-    <img src="img/logo site em C 1.png" alt="Ícone C"> Strings
-  </a>
-  <a href="condicoes.html" class="btn-link">
-    <img src="img/logo site em C 1.png" alt="Ícone C"> Condições
-  </a>
-  <a href="lacos.html" class="btn-link">
-    <img src="img/logo site em C 1.png" alt="Ícone C"> Laços de Repetição
-  </a>
-  <a href="vetores_matrizes.html" class="btn-link">
-    <img src="img/logo site em C 1.png" alt="Ícone C"> Vetores e Matrizes
-  </a>
-</div>
+     <div class="quiz-container">
+    <img id="imagem-pergunta" src="" alt="Imagem da pergunta">
+    <h2 id="pergunta"></h2>
+    <div class="options" id="opcoes"></div>
+    <p id="resultado"></p>
+  </div>
+
+    
+
 
     </main>
 
@@ -142,6 +132,7 @@
             </ul>
         </div>
 </div>
+    <script src="script/quiz_introducao.js"></script>
     <script src="script/auth.js"></script>
     <script src="script/logout.js"></script>
     <script src="script/feedback.js"></script>

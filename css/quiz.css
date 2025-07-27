@@ -1,0 +1,40 @@
+.lista-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  column-gap: 60px;
+  margin: 40px auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to right, black 80%, white 27%);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "League Spartan", serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.btn-link img {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-link:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px var(--color_green);
+}
+
