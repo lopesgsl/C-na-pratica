@@ -59,6 +59,14 @@ div#certificados_container {
     width: 100%;
     height: 170%;
 }
+ul .dados_perfil {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kulim Park', serif;
+    font-size: 1.2rem;
+    color: var(--color_green);
+}
 .logout{
     display: flex;
     color: var(--color_red);

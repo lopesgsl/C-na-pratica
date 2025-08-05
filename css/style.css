@@ -154,6 +154,10 @@ html, body {
   header a:hover:not(.link){
     background-color: #2c2c2c28;
   } 
+  header a.logo_home:hover {
+    background-color: none;
+    scale: 1.1;
+  }
   header nav#nav_login a#login:hover{
     background-color: var(--color_green);
   }
@@ -428,3 +432,4 @@ div.rodape hr{
   margin: 0px 0px;
   
 }
+
