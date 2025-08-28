@@ -45,7 +45,7 @@
             <input class="text" type="email" id="email_login" placeholder="Email" required>
             <input class="text" type="password" id="senha_login" placeholder="Senha" required>
             <input class="text" type="password" id="senha_login2" placeholder="Confirme a senha" required>
-            <button id="Entra" type="button">Entrar</button>
+            <button id="Entra" type="submit">Cadastrar</button>
             <div>
                 <input type="checkbox" name="polic_priv" id="polic_priv" required>
                 <label for="polic_priv">Li e aceito a política de privacidade</label>
@@ -54,6 +54,10 @@
                 <input type="checkbox" name="term_condition" id="term_condition" required>
                 <label for="term_condition">Li e aceito os termos de uso</label>
             </div>
+
+             <!-- CORREÇÃO 2: Adicionada a div para exibir mensagens de erro/sucesso -->
+            <div id="message" style="text-align: center; margin-top: 1rem; font-weight: bold; min-height: 20px;"></div>
+
             <p>Já tem uma conta? <a href="login.html">Entre aqui</a></p>
         </form>
     </main>

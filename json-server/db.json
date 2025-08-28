@@ -1,0 +1,556 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "email": "joao@email.com",
+      "senha": "12345678"
+    },
+    {
+      "id": "2",
+      "nome": "Maria Souza",
+      "email": "maria@email.com",
+      "senha": "mariasecreta"
+    },
+    {
+      "id": "e170",
+      "nome": "gustavo",
+      "email": "gustavo20@gmail.com",
+      "senha": "12345678"
+    },
+    {
+      "id": "a1de",
+      "nome": "gustavo",
+      "email": "gustavo19@gmail.com",
+      "senha": "12345678"
+    },
+    {
+      "id": "b5cc",
+      "nome": "gustavo",
+      "email": "gustavo18@gmail.com",
+      "senha": "12345678"
+    },
+    {
+      "id": "1f59",
+      "nome": "alcindo",
+      "email": "alcindo10@gmail.com",
+      "senha": "12345678"
+    },
+    {
+      "id": "440f",
+      "nome": "geraldo",
+      "email": "geraldo20@gmail.com",
+      "senha": "12345678"
+    },
+    {
+      "id": "d5f0",
+      "nome": "charla",
+      "email": "charla20@gmail.com",
+      "senha": "12345678"
+    }
+  ],
+  "playlists": [
+    {
+      "id": "1",
+      "titulo": "Introdução",
+      "descricao": "Conceitos fundamentais de algoritmos e programação."
+    },
+    {
+      "id": "2",
+      "titulo": "Entrada e Saída",
+      "descricao": "Aprenda a interagir com o usuário, lendo e mostrando dados."
+    },
+    {
+      "id": "3",
+      "titulo": "Strings",
+      "descricao": "Manipulação de textos e cadeias de caracteres."
+    },
+    {
+      "id": "4",
+      "titulo": "Desvios Condicionais",
+      "descricao": "Controle o fluxo do seu programa com if, else e switch."
+    },
+    {
+      "id": "5",
+      "titulo": "Comandos de Repetição",
+      "descricao": "Execute blocos de código várias vezes com for, while e do-while."
+    },
+    {
+      "id": "6",
+      "titulo": "Vetores",
+      "descricao": "Trabalhando com listas e arrays de dados."
+    }
+  ],
+  "videos": [
+    {
+      "id": "1",
+      "playlistId": 1,
+      "title": "Algoritmos",
+      "videoId": "E5g8_FApAiA"
+    },
+    {
+      "id": "2",
+      "playlistId": 1,
+      "title": "Lógica",
+      "videoId": "a_VeysH5UZY"
+    },
+    {
+      "id": "3",
+      "playlistId": 1,
+      "title": "Elementos de Algoritmos",
+      "videoId": "9VzUGADaZhg"
+    },
+    {
+      "id": "4",
+      "playlistId": 1,
+      "title": "Representação de Algoritmos",
+      "videoId": "7cdFSiOdQsg"
+    },
+    {
+      "id": "5",
+      "playlistId": 1,
+      "title": "Introdução à Programação",
+      "videoId": "gtQG1UY5mrk"
+    },
+    {
+      "id": "6",
+      "playlistId": 1,
+      "title": "Componentes de um Compilador",
+      "videoId": "hEi-xDyIBHg"
+    },
+    {
+      "id": "7",
+      "playlistId": 1,
+      "title": "Dicas Importantes",
+      "videoId": "UXWpudh5BxU"
+    },
+    {
+      "id": "8",
+      "playlistId": 2,
+      "title": "Exemplo 1",
+      "videoId": "AAJviAw91Jk"
+    },
+    {
+      "id": "9",
+      "playlistId": 2,
+      "title": "Exemplo 2",
+      "videoId": "KvkTvEvHZ8c"
+    },
+    {
+      "id": "10",
+      "playlistId": 2,
+      "title": "Exemplo 3",
+      "videoId": "r0LWya81Wzk"
+    },
+    {
+      "id": "11",
+      "playlistId": 2,
+      "title": "Exemplo 4",
+      "videoId": "bSHKlPY0JHA"
+    },
+    {
+      "id": "12",
+      "playlistId": 2,
+      "title": "Exemplo 5",
+      "videoId": "cmNhQ_xNnek"
+    },
+    {
+      "id": "13",
+      "playlistId": 2,
+      "title": "Tipos de Váriaveis e Operadores",
+      "videoId": "6kGdDnRCmFI"
+    },
+    {
+      "id": "14",
+      "playlistId": 2,
+      "title": "Void main ou int main?",
+      "videoId": "VzMZrWJ5Gso"
+    },
+    {
+      "id": "15",
+      "playlistId": 3,
+      "title": "Lendo Strings",
+      "videoId": "HZBe5g7npQI"
+    },
+    {
+      "id": "16",
+      "playlistId": 3,
+      "title": "Calculando o tamanho de uma String",
+      "videoId": "wlbgQZ_alBg"
+    },
+    {
+      "id": "17",
+      "playlistId": 3,
+      "title": "Caractere de uma posição específica",
+      "videoId": "Ewh3e7xstaA"
+    },
+    {
+      "id": "18",
+      "playlistId": 3,
+      "title": "Cópia de Strings",
+      "videoId": "ZJRrCqh4yRk"
+    },
+    {
+      "id": "19",
+      "playlistId": 3,
+      "title": "Concatenação",
+      "videoId": "aYQeVPfFqSg"
+    },
+    {
+      "id": "20",
+      "playlistId": 3,
+      "title": "Comparação",
+      "videoId": "W402yHF2a7Q"
+    },
+    {
+      "id": "21",
+      "playlistId": 4,
+      "title": "Média",
+      "videoId": "a77WBD89W2I"
+    },
+    {
+      "id": "22",
+      "playlistId": 4,
+      "title": "Desvios Condicionais",
+      "videoId": "-QW1EZUkpks"
+    },
+    {
+      "id": "23",
+      "playlistId": 4,
+      "title": "Par ou Ímpar",
+      "videoId": "xzpeSJL1L78"
+    },
+    {
+      "id": "24",
+      "playlistId": 4,
+      "title": "Positivo,Negativo ou Neutro",
+      "videoId": "n2lHsvVXYyk"
+    },
+    {
+      "id": "25",
+      "playlistId": 4,
+      "title": "Triangulo",
+      "videoId": "Z_3k7PKpkNc"
+    },
+    {
+      "id": "26",
+      "playlistId": 4,
+      "title": "Calculadora",
+      "videoId": "iveVc3GV44Q"
+    },
+    {
+      "id": "27",
+      "playlistId": 4,
+      "title": "Numero por Extenso",
+      "videoId": "T_0Pl1S0RJQ"
+    },
+    {
+      "id": "28",
+      "playlistId": 4,
+      "title": "Estado Civil",
+      "videoId": "dKH2X3FOm4s"
+    },
+    {
+      "id": "29",
+      "playlistId": 5,
+      "title": "For - Calcular Soma Intervalo",
+      "videoId": "rcLdxPUXaIk"
+    },
+    {
+      "id": "30",
+      "playlistId": 5,
+      "title": "For - Fatorial",
+      "videoId": "1Tv2EZxJyEc"
+    },
+    {
+      "id": "31",
+      "playlistId": 5,
+      "title": "For - Divisores Exatos",
+      "videoId": "jV_OWMyqnxc"
+    },
+    {
+      "id": "32",
+      "playlistId": 5,
+      "title": "For - Ordem Decendente",
+      "videoId": "9ZbHX5zQ__Y"
+    },
+    {
+      "id": "33",
+      "playlistId": 5,
+      "title": "For - Ordem Ascendente",
+      "videoId": "lHg1MczmVEw"
+    },
+    {
+      "id": "34",
+      "playlistId": 5,
+      "title": "For - Pares Ordenados",
+      "videoId": "auVYDJKvWn0"
+    },
+    {
+      "id": "35",
+      "playlistId": 5,
+      "title": "While - Div e Mod",
+      "videoId": "71uJ1wXPpvs"
+    },
+    {
+      "id": "36",
+      "playlistId": 5,
+      "title": "While - Fibonacci",
+      "videoId": "HaR-tA9kUW8"
+    },
+    {
+      "id": "37",
+      "playlistId": 5,
+      "title": "While - Raiz Quadrada",
+      "videoId": "gwYkyZ0_-yM"
+    },
+    {
+      "id": "38",
+      "playlistId": 5,
+      "title": "While - Média Aritmética",
+      "videoId": "QsR9BQwz9-8"
+    },
+    {
+      "id": "39",
+      "playlistId": 5,
+      "title": "Do/While - Quantidade de Algarismos",
+      "videoId": "dNdx7tFeoo0"
+    },
+    {
+      "id": "40",
+      "playlistId": 5,
+      "title": "Do/While - Raiz Quadrada",
+      "videoId": "JGlZmBUdZiQ"
+    },
+    {
+      "id": "41",
+      "playlistId": 5,
+      "title": "Do/While - Média Aritmética",
+      "videoId": "YtrpPlCWIW8"
+    },
+    {
+      "id": "42",
+      "playlistId": 5,
+      "title": "Do/While - Tamanho das Palavras",
+      "videoId": "SMs5zXztbHM"
+    },
+    {
+      "id": "43",
+      "playlistId": 6,
+      "title": "Números na mesma ordem",
+      "videoId": "Jwgni6okZWY"
+    },
+    {
+      "id": "44",
+      "playlistId": 6,
+      "title": "Números na ordem inversa",
+      "videoId": "47M1vlLEMLw"
+    },
+    {
+      "id": "45",
+      "playlistId": 6,
+      "title": "Enésimo número",
+      "videoId": "wtUvGQ8xSPI"
+    },
+    {
+      "id": "46",
+      "playlistId": 6,
+      "title": "Inverter posições",
+      "videoId": "Bge2s0KXTN4"
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "1",
+      "titulo": "Introdução",
+      "perguntas": [
+        {
+          "questao": "1. Qual é a função principal obrigatória em todo programa em C?",
+          "alternativas": [
+            "inicio()",
+            "programa()",
+            "main()",
+            "start()"
+          ],
+          "correta": 2
+        },
+        {
+          "questao": "2. Qual tipo usamos para números inteiros?",
+          "alternativas": [
+            "float",
+            "char",
+            "int",
+            "string"
+          ],
+          "correta": 2
+        },
+        {
+          "questao": "3. Como se declara uma variável inteira chamada idade?",
+          "alternativas": [
+            "int idade;",
+            "idade int;",
+            "inter idade;",
+            "var idade;"
+          ],
+          "correta": 0
+        },
+        {
+          "questao": "4. Qual das opções representa um tipo de dado real (decimal) em C?",
+          "alternativas": [
+            "char",
+            "int",
+            "float",
+            "bool"
+          ],
+          "correta": 2
+        },
+        {
+          "questao": "5. Qual dos operadores é usado para atribuição?",
+          "alternativas": [
+            "==",
+            "=",
+            ":=",
+            "=>"
+          ],
+          "correta": 1
+        },
+        {
+          "questao": "6. Qual símbolo indica fim de uma instrução em C?",
+          "alternativas": [
+            ":",
+            ";",
+            ".",
+            ","
+          ],
+          "correta": 1
+        },
+        {
+          "questao": "7. Qual das alternativas representa uma constante?",
+          "alternativas": [
+            "int valor;",
+            "const int x = 10;",
+            "float constante();",
+            "char nome[10];"
+          ],
+          "correta": 1
+        },
+        {
+          "questao": "8. Qual ferramenta é usada para traduzir código C em linguagem de máquina?",
+          "alternativas": [
+            "Interpretador",
+            "Emulador",
+            "Navegador",
+            "Compilador"
+          ],
+          "correta": 3
+        },
+        {
+          "questao": "9. O que o código int x = 10 / 2; faz?",
+          "alternativas": [
+            "Atribui 5 a x",
+            "Gera erro de sintaxe",
+            "Cria uma string",
+            "Faz um loop"
+          ],
+          "correta": 0
+        },
+        {
+          "questao": "10. Qual comando é usado para declarar uma variável do tipo caractere?",
+          "alternativas": [
+            "caracter letra;",
+            "int letra;",
+            "string letra;",
+            "char letra;"
+          ],
+          "correta": 3
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "titulo": "Entrada e Saída",
+      "perguntas": [
+        {
+          "questao": "1. Qual função é usada para ler dados do teclado?",
+          "alternativas": [
+            "gets()",
+            "scanf()",
+            "input()",
+            "readline()"
+          ],
+          "correta": 1
+        },
+        {
+          "questao": "2. O que o código printf(\"Olá Mundo\"); faz?",
+          "alternativas": [
+            "Imprime uma imagem",
+            "Cria uma variável",
+            "Exibe \"Olá Mundo\" na tela",
+            "Lê algo do teclado"
+          ],
+          "correta": 2
+        },
+        {
+          "questao": "3. Qual é a saída de printf(\"%d\", 3 * 4);?",
+          "alternativas": [
+            "7",
+            "12",
+            "34",
+            "%d"
+          ],
+          "correta": 1
+        },
+        {
+          "questao": "4. Qual biblioteca é necessária para usar printf() e scanf()?",
+          "alternativas": [
+            "#include <stdlib.h>",
+            "#include <conio.h>",
+            "#include <math.h>",
+            "#include <stdio.h>"
+          ],
+          "correta": 3
+        },
+        {
+          "questao": "5. Qual biblioteca é necessária para usar getch()",
+          "alternativas": [
+            "#include <stdio.h>",
+            "#include <math.h>",
+            "#include <conio.h>",
+            "#include <stdlib.h>"
+          ],
+          "correta": 2
+        },
+        {
+          "questao": "6. Qual código calcula corretamente a média aritmética de 3 números inteiros?",
+          "alternativas": [
+            "media = (n1 + n2 + n3);",
+            "media = n1 + n2 + n3 / 3;",
+            "media = (n1 * n2 * n3) / 3;",
+            "media = (n1 + n2 + n3) / 3;"
+          ],
+          "correta": 3
+        },
+        {
+          "questao": "7. Qual alternativa calcula corretamente a área e o perímetro de um quadrado?",
+          "alternativas": [
+            "imagens/quiz/7alt1.png",
+            "imagens/quiz/7alt2.png",
+            "imagens/quiz/7alt3.png",
+            "imagens/quiz/7alt4.png"
+          ],
+          "correta": 3
+        },
+        {
+          "questao": "8. Qual alternativa lê um número e imprime seu antecessor e sucessor?",
+          "alternativas": [
+            "imagens/quiz/8alt1.png",
+            "imagens/quiz/8alt2.png",
+            "imagens/quiz/8alt3.png",
+            "imagens/quiz/8alt4.png"
+          ],
+          "correta": 1
+        }
+      ]
+    }
+  ]
+}
