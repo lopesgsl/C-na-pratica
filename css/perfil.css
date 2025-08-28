@@ -67,6 +67,11 @@ ul .dados_perfil {
     font-size: 1.2rem;
     color: var(--color_green);
 }
+#botoes_perfil {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
 .logout{
     display: flex;
     color: var(--color_red);
@@ -87,5 +92,14 @@ ul .dados_perfil {
     font-weight: 600;
     font-size: 1.2rem;
     border-radius: 0.5rem;
+    cursor: pointer;
+}
+#delete-button {
+            background-color: var(--color_red, #dc3545);
+            color: white;
+}
+#delete-button:hover {
+    background-color: black;
+    color: white;
     cursor: pointer;
 }

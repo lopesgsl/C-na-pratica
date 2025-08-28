@@ -1,43 +1,67 @@
+        document.addEventListener('DOMContentLoaded', function() {
+            const usuarioAtualString = localStorage.getItem('usuario_atual');
 
-document.addEventListener('DOMContentLoaded', function() {
+            if (!usuarioAtualString || usuarioAtualString === 'null') {
+                alert("Acesso negado. Por favor, faça login para ver o seu perfil.");
+                window.location.href = 'login.html';
+                return;
+            }
 
-    // 1. Proteger a Página: Verificar se há um utilizador logado
-    const usuarioAtualString = localStorage.getItem('usuario_atual');
+            let usuario;
+            try {
+                usuario = JSON.parse(usuarioAtualString);
+            } catch (e) {
+                console.error("Erro ao ler os dados do utilizador. A redirecionar para o login.", e);
+                logout();
+                return;
+            }
 
-    // Se não houver nenhum utilizador (ou se for a string "null"), redireciona para o login
-    if (!usuarioAtualString || usuarioAtualString === 'null') {
-        alert("Acesso negado. Por favor, faça login para ver o seu perfil.");
-        window.location.href = 'login.html';
-        return; // Para a execução do resto do script
-    }
+            // Preenche o HTML com os dados do utilizador
+            document.getElementById('nome_perfil').textContent = usuario.nome;
+            document.getElementById('email_perfil').textContent = usuario.email;
+            // CORREÇÃO: Garante que a senha seja sempre exibida como oculta
+            document.getElementById('senha_perfil').textContent = '********';
 
-    // 2. Ler e Converter os Dados do Utilizador
-    // Usamos um try-catch para garantir que os dados guardados são válidos
-    try {
-        const usuario = JSON.parse(usuarioAtualString);
+            // --- Lógica dos Botões ---
 
-        // 3. Encontrar os Elementos no HTML
-        const nomePerfilEl = document.getElementById('nome_perfil');
-        const senhaPerfilEl = document.getElementById('senha_perfil');
-        const emailPerfilEl = document.getElementById('email_perfil');
+            // Função de Logout
+            function logout() {
+                localStorage.removeItem('usuario_atual');
+                console.log('Utilizador deslogado com sucesso.');
+                window.location.href = 'index.html';
+            }
 
-        // 4. Preencher o HTML com os Dados
-        // Verificamos se os elementos existem antes de tentar preenchê-los
-        if (nomePerfilEl && senhaPerfilEl && emailPerfilEl) {
-            nomePerfilEl.textContent = usuario.nome;
-            emailPerfilEl.textContent = usuario.email;
+            // Associa a função de logout aos botões de logout
+            const logoutButton = document.getElementById('logout-button');
+            if(logoutButton) logoutButton.addEventListener('click', logout);
             
-            // Por segurança, é uma boa prática não exibir a senha diretamente.
-            // Vamos substituí-la por asteriscos.
-            senhaPerfilEl.textContent = '********';
-        } else {
-            console.error("Não foi possível encontrar os elementos do perfil na página.");
-        }
+            const headerLogoutButton = document.getElementById('header-logout-button');
+            if(headerLogoutButton) headerLogoutButton.addEventListener('click', logout);
 
-    } catch (e) {
-        console.error("Erro ao ler os dados do utilizador. A redirecionar para o login.", e);
-        // Se os dados estiverem corrompidos, limpa o localStorage e redireciona
-        localStorage.removeItem('usuario_atual');
-        window.location.href = 'login.html';
-    }
-});
+            // Lógica do Botão de Excluir Conta
+            const deleteButton = document.getElementById('delete-button');
+            if(deleteButton) {
+                deleteButton.addEventListener('click', async () => {
+                    const confirmacao = confirm("Tem a certeza de que deseja excluir a sua conta? Esta ação não pode ser desfeita.");
+
+                    if (confirmacao) {
+                        try {
+                            const response = await fetch(`http://localhost:3000/usuarios/${usuario.id}`, {
+                                method: 'DELETE',
+                            });
+
+                            if (!response.ok) {
+                                throw new Error('Não foi possível excluir a conta. Tente novamente.');
+                            }
+
+                            alert('Conta excluída com sucesso.');
+                            logout(); // A função logout já faz o redirecionamento para index.html
+
+                        } catch (error) {
+                            console.error("Erro ao excluir a conta:", error);
+                            alert(error.message);
+                        }
+                    }
+                });
+            }
+        });
